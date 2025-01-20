@@ -1,7 +1,13 @@
+import { Hero } from "./components/Hero";
+import Navbar from "./components/Navbar";
+import { Skills } from "./components/Skills";
+
 export default function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold ">Hello world!</h1>
-    </>
+    <div>
+      <Navbar />
+      <Hero />
+      <Skills />
+    </div>
   );
 }
