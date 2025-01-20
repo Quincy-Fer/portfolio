@@ -1,13 +1,17 @@
-import { Hero } from "./components/Hero";
-import Navbar from "./components/Navbar";
-import { Skills } from "./components/Skills";
+import { About, Footer, Hero, Navbar, Projects, Skills } from "./components";
 
 export default function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <Skills />
+      <main>
+        <Hero />
+        <Skills />
+        <Projects />
+        <About />
+        
+      </main>
+      <Footer />
     </div>
   );
 }
