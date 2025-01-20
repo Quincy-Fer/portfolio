@@ -9,7 +9,6 @@ export default function App() {
         <Skills />
         <Projects />
         <About />
-        
       </main>
       <Footer />
     </div>
