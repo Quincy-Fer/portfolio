@@ -10,7 +10,7 @@ const Navbar = () => {
 
         {/* Links for larger screens */}
         <ul className="hidden md:flex font-extrabold gap-20 font-barlow transition-all">
-          <li className="hover:underline transition-all underline-offset-8 decoration-2">
+          <li className="hover:underline transition-all underline-offset-8 decoration-2 ">
             <a href="#home" className="">
               Home
             </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         {/* Hamburger Menu */}
         <button
-          className="md:hidden text-gray-300"
+          className="md:hidden text-red-900"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
