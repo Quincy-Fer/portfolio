@@ -4,31 +4,31 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-cyan-400 text-white fixed w-full">
-      <div className="container mx-auto flex items-center justify-between p-4">
+    <nav className="bg-teal-300 text-white fixed w-full">
+      <div className="container mx-auto flex items-center justify-around p-4">
         {/* Logo */}
 
         {/* Links for larger screens */}
         <ul className="hidden md:flex font-extrabold gap-20 font-barlow transition-all">
-          <li className="hover:underline transition-all underline-offset-8">
+          <li className="hover:underline transition-all underline-offset-8 decoration-2">
             <a href="#home" className="">
               Home
             </a>
           </li>
 
-          <li className="hover:underline transition-all underline-offset-8">
+          <li className="hover:underline transition-all underline-offset-8 decoration-2">
             {" "}
             <a href="#projecten" className="">
               Projecten
             </a>
           </li>
-          <li className="hover:underline transition-all underline-offset-8">
+          <li className="hover:underline transition-all underline-offset-8 decoration-2">
             {" "}
             <a href="#contact" className="">
               Contact
             </a>
           </li>
-          <li className="hover:underline transition-all underline-offset-8">
+          <li className="hover:underline transition-all underline-offset-8 decoration-2">
             <a href="#about" className="">
               Over Mij
             </a>
