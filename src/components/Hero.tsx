@@ -8,9 +8,9 @@ const Hero = () => {
       <h1 className="font-montserrat font-bold  text-6xl text-gray-800 leading-tight tracking-tighter">
         Hoi, ik ben <span className="text-teal-400"> Quincy.</span>
         <br />
-        Een frontend developer |
+        Frontend developer |
       </h1>
-      <p className="mt-10 max-w-[520px] text-xl leading-relaxed tracking-wide ">
+      <p className="mt-10 max-w-[520px] font-barlow text-xl leading-relaxed tracking-wide ">
         Ik ben een gepassioneerde webontwikkelaar gespecialiseerd in het maken
         van 🎨 visueel aantrekkelijke websites. Ik hou van het oplossen van
         problemen 🧩 en met behulp van code 👨‍💻 creatieve ideeën tot leven

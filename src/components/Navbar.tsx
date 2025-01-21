@@ -23,14 +23,14 @@ const Navbar = () => {
             </a>
           </li>
           <li className="hover:underline transition-all underline-offset-8 decoration-2">
-            {" "}
-            <a href="#contact" className="">
-              Contact
+            <a href="#about" className="">
+              Over Mij
             </a>
           </li>
           <li className="hover:underline transition-all underline-offset-8 decoration-2">
-            <a href="#about" className="">
-              Over Mij
+            {" "}
+            <a href="#contact" className="">
+              Contact
             </a>
           </li>
         </ul>
