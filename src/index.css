@@ -23,3 +23,15 @@ html {
   background-size: 150px 150px;
   background-position: 0 0, 75px 75px;
 }
+
+/* css uitsnijding */
+.css-cut {
+  clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+  background: rgb(45, 212, 191);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 212, 191, 1) 0%,
+    rgba(94, 234, 212, 1) 35%,
+    rgba(20, 184, 166, 1) 100%
+  );
+}
