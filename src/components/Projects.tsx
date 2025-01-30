@@ -1,5 +1,5 @@
 import React from "react";
-import pulsefit from '../assets/images/pulse-fit .png'
+import pulsefit from '../assets/images/pulse-fit.png'
 
 const Projects = () => {
   return (
@@ -8,12 +8,24 @@ const Projects = () => {
         Projecten
       </h2>
       {/* project 1 */}
-      <div className="flex justify-evenly gap-20">
+      <div className="grid grid-cols-2 h-[360px]">
         <div>
-          <h4>lala</h4>
+          <h4>lalalalalalalalalala</h4>
           <p>lala</p>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          <h4>lalalalalalalalalala</h4>
+          
         </div>
-        <img src={pulsefit} alt="" />
+        <img src={pulsefit} alt="" className="w-full h-full" />
+     
         
       </div>
     </section>
