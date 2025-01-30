@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section className=" css-cut ">
+    <section className=" css-cut  ">
       <h2 className="text-center font-montserrat font-bold  text-5xl text-white py-10 ">
         Vaardigheden
       </h2>

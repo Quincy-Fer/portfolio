@@ -9,9 +9,9 @@ const Hero = () => {
         className="bg-white max-w-[600px] font-montserrat font-bold  text-6xl text-gray-800 
       leading-tight tracking-tighter"
       >
-        Hoi, ik ben <span className="text-teal-400"> Quincy.</span>
+        Hi, ik ben <span className="text-teal-400"> Quincy.</span>
         <br />
-        Frontend developer |
+        Frontend developer  |
       </h1>
       <p
         className="bg-white mt-10 max-w-[520px] font-barlow text-xl leading-relaxed
