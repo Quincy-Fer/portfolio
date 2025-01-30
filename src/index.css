@@ -35,3 +35,7 @@ html {
     rgba(20, 184, 166, 1) 100%
   );
 }
+
+.box-shadow {-webkit-box-shadow: 28px 14px 0px 3px rgba(15,118,110,1);
+  -moz-box-shadow: 28px 14px 0px 3px rgba(15,118,110,1);
+  box-shadow: 28px 14px 0px 3px rgba(15,118,110,1);}
