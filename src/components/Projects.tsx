@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Projects = () => {
   return (
     <section className="px-48">
@@ -13,7 +12,6 @@ const Projects = () => {
           <h4>lala</h4>
           <p>lala</p>
         </div>
-
       </div>
     </section>
   );
