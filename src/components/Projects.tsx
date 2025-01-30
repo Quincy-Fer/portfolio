@@ -1,4 +1,5 @@
 import React from "react";
+import pulsefit from '../assets/images/pulse-fit .png'
 
 const Projects = () => {
   return (
@@ -12,6 +13,8 @@ const Projects = () => {
           <h4>lala</h4>
           <p>lala</p>
         </div>
+        <img src={pulsefit} alt="" />
+        
       </div>
     </section>
   );
