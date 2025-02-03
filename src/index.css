@@ -36,6 +36,22 @@ html {
   );
 }
 
-.box-shadow {-webkit-box-shadow: 28px 14px 0px 3px rgba(15,118,110,1);
-  -moz-box-shadow: 28px 14px 0px 3px rgba(15,118,110,1);
-  box-shadow: 28px 14px 0px 3px rgba(15,118,110,1);}
+.box-shadow {
+  -webkit-box-shadow: 28px 14px 0px 3px rgba(15, 118, 110, 1);
+  -moz-box-shadow: 28px 14px 0px 3px rgba(15, 118, 110, 1);
+  box-shadow: 28px 14px 0px 3px rgba(15, 118, 110, 1);
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d9488; /* Scrollbar color (blue-500 in Tailwind) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f766e; /* Darker color on hover (blue-600 in Tailwind) */
+}
