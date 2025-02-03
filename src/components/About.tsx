@@ -24,10 +24,10 @@ const About = () => {
               maken van mooie en gebruiksvriendelijke websites ! Ik hou ervan om
               te puzzelen met design en functionaliteit totdat het plaatje
               compleet is. Ik ben altijd nieuwsgierig naar nieuwe technologieën
-              en blijf mezelf uitdagen om beter te worden en slimme, creatieve
+              en blijf mijzelf uitdagen om beter te worden en slimme, creatieve
               oplossingen te bedenken. <br />
               <br />
-              Naast coderen ben ik ook een creatieve geest et een passie voor
+              Naast coderen ben ik ook een creatieve geest met een passie voor
               gamen, tekenen en lezen. Of ik nu op ga in een virtuele wereld 🎮,
               mijn ideeën tot leven breng op papier 📝 of me verdiep in een goed
               boek 📕 – ik haal inspiratie uit alles om me heen. Werken als
@@ -41,7 +41,7 @@ const About = () => {
             >
               <button
                 className="mt-10 font-barlow px-6 py-3 font-semibold bg-white text-teal-400 text-xl
-                hover:text-white hover:bg-teal-700  transition-all"
+                hover:text-white hover:bg-teal-700  transition-all "
               >
                 Bekijk mijn CV
               </button>
