@@ -46,7 +46,7 @@ const Projects = () => {
               <a
                 href="https://pulse-fit-kappa.vercel.app/"
                 target="_blank"
-                className="bg-teal-400  text-white px-8 py-4 text-xl 
+                className="bg-teal-400  text-white px-8 py-4 text-xl
              font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
               >
                 Live Site
@@ -83,7 +83,7 @@ const Projects = () => {
                 href="https://github.com/Quincy-Fer/pulse-fit"
                 target="_blank"
                 className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
-             font-barlow font-bold hover:bg-teal-800 hover:text-white transition-all flex gap-2"
+             font-barlow font-bold hover:bg-teal-800 hover:text-teal-200 transition-all flex gap-2"
               >
                 Bekijk Code
                 <svg
@@ -218,7 +218,7 @@ const Projects = () => {
                 href="https://github.com/Quincy-Fer/Harmony-Therapy-Website"
                 target="_blank"
                 className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
-             font-barlow font-bold hover:bg-teal-800 hover:text-white transition-all flex gap-2"
+             font-barlow font-bold hover:bg-teal-800 hover:text-teal-200 transition-all flex gap-2"
               >
                 Bekijk Code
                 <svg
@@ -354,7 +354,7 @@ const Projects = () => {
                 href="https://github.com/Quincy-Fer/Bliss---Restaurant"
                 target="_blank"
                 className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
-             font-barlow font-bold hover:bg-teal-800 hover:text-white transition-all flex gap-2"
+             font-barlow font-bold hover:bg-teal-800 hover:text-teal-200 transition-all flex gap-2"
               >
                 Bekijk Code
                 <svg
