@@ -1,4 +1,5 @@
 import { About, Footer, Hero, Navbar, Projects, Skills } from "./components";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
         <Skills />
         <Projects />
         <About />
+        <Contact />
       </main>
       <Footer />
     </div>

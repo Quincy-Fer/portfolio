@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Skills = () => {
   return (
     <section className=" css-cut  ">
@@ -7,7 +8,7 @@ const Skills = () => {
         Vaardigheden
       </h2>
       <div className=" pb-20 pt-14 pl-48  ">
-        <div className="flex">
+        <div className="flex ">
           <p className="min-w-[400px] text-white font-barlow font-bold text-2xl pt-5 pb-10">
             Programmeertalen
           </p>
