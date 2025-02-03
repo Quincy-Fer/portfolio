@@ -5,7 +5,7 @@ import bliss from "../assets/images/bliss-hero.png";
 
 const Projects = () => {
   return (
-    <section className="px-48">
+    <section className="px-48 pb-16">
       <h2 className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 ">
         Projecten
       </h2>
@@ -82,17 +82,17 @@ const Projects = () => {
               <a
                 href="https://github.com/Quincy-Fer/pulse-fit"
                 target="_blank"
-                className="bg-teal-400  text-white px-8 py-4 text-xl 
-             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
+                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
+             font-barlow font-bold hover:bg-teal-800 hover:text-white transition-all flex gap-2"
               >
                 Bekijk Code
                 <svg
-                  className="w-8"
-                  viewBox="-2.6 -2.6 25.20 25.20"
+                className="w-8"
+                  viewBox="0 0 20 20"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#fff"
-                  stroke="#fff"
+                  
+                  fill="#2dd4bf"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g
@@ -106,7 +106,8 @@ const Projects = () => {
                     <desc>Created with Sketch.</desc> <defs> </defs>{" "}
                     <g
                       id="Page-1"
-                      stroke-width="0.0002"
+                      stroke="none"
+                      stroke-width="1"
                       fill="none"
                       fill-rule="evenodd"
                     >
@@ -114,7 +115,7 @@ const Projects = () => {
                       <g
                         id="Dribbble-Light-Preview"
                         transform="translate(-140.000000, -7559.000000)"
-                        fill="#fff"
+                        fill="#2dd4bf"
                       >
                         {" "}
                         <g
@@ -158,12 +159,8 @@ const Projects = () => {
             <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
               Tailwind
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
-              Html
-            </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
-              css
-            </div>
+           
+           
             <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
               javascript
             </div>
@@ -220,17 +217,17 @@ const Projects = () => {
               <a
                 href="https://github.com/Quincy-Fer/Harmony-Therapy-Website"
                 target="_blank"
-                className="bg-teal-400  text-white px-8 py-4 text-xl 
-             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
+                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
+             font-barlow font-bold hover:bg-teal-800 hover:text-white transition-all flex gap-2"
               >
                 Bekijk Code
                 <svg
-                  className="w-8"
-                  viewBox="-2.6 -2.6 25.20 25.20"
+                className="w-8"
+                  viewBox="0 0 20 20"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#fff"
-                  stroke="#fff"
+                  
+                  fill="#2dd4bf"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g
@@ -244,7 +241,8 @@ const Projects = () => {
                     <desc>Created with Sketch.</desc> <defs> </defs>{" "}
                     <g
                       id="Page-1"
-                      stroke-width="0.0002"
+                      stroke="none"
+                      stroke-width="1"
                       fill="none"
                       fill-rule="evenodd"
                     >
@@ -252,7 +250,7 @@ const Projects = () => {
                       <g
                         id="Dribbble-Light-Preview"
                         transform="translate(-140.000000, -7559.000000)"
-                        fill="#fff"
+                        fill="#2dd4bf"
                       >
                         {" "}
                         <g
@@ -355,17 +353,17 @@ const Projects = () => {
               <a
                 href="https://github.com/Quincy-Fer/Bliss---Restaurant"
                 target="_blank"
-                className="bg-teal-400  text-white px-8 py-4 text-xl 
-             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
+                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
+             font-barlow font-bold hover:bg-teal-800 hover:text-white transition-all flex gap-2"
               >
                 Bekijk Code
                 <svg
-                  className="w-8"
-                  viewBox="-2.6 -2.6 25.20 25.20"
+                className="w-8"
+                  viewBox="0 0 20 20"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="#fff"
-                  stroke="#fff"
+                  
+                  fill="#2dd4bf"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g
@@ -379,7 +377,8 @@ const Projects = () => {
                     <desc>Created with Sketch.</desc> <defs> </defs>{" "}
                     <g
                       id="Page-1"
-                      stroke-width="0.0002"
+                      stroke="none"
+                      stroke-width="1"
                       fill="none"
                       fill-rule="evenodd"
                     >
@@ -387,7 +386,7 @@ const Projects = () => {
                       <g
                         id="Dribbble-Light-Preview"
                         transform="translate(-140.000000, -7559.000000)"
-                        fill="#fff"
+                        fill="#2dd4bf"
                       >
                         {" "}
                         <g

@@ -3,7 +3,7 @@ import profiel from "../assets/images/profielfoto_enhanced.png";
 
 const About = () => {
   return (
-    <section className=" css-cut  ">
+    <section className=" css-cut ">
       <h2 className="text-center font-montserrat font-bold  text-5xl text-white py-10 mt-20 ">
         Over mij
       </h2>
