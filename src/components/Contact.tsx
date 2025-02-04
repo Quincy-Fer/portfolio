@@ -37,8 +37,14 @@ const Contact = () => {
           initial={{ rotate: 0 }}
           animate={{ rotate: 0 }}
           whileHover={{
-            rotate: [-10, 10, -10, 0], // Sway effect
-            transition: { duration: 1.2, ease: "easeInOut", delay: 0.2 },
+            y: [-15, 0, -9, 0], // Bouncing effect
+            transition: {
+              type: "spring", // Smooth natural motion
+              stiffness: 50, // Controls how strong the spring is
+              damping: 10, // Slows down motion for smooth effect
+              mass: 0.5, // Lighter mass makes it more responsive
+              repeat: 2, // Keeps bouncing while hovered
+            },
           }}
           className="w-56 mt-12  "
           viewBox="0 0 1024 1024"
