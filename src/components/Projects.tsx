@@ -50,7 +50,7 @@ const Projects = () => {
               tracking-wide text-gray-700"
           >
             Een visueel aantrekkelijke website voor een moderne Gym! Bevat
-            meerdere uitgebreide subpaginas gemaakt met de Next App router. Het
+            meerdere uitgebreide subpaginas gemaakt met Next.js. Het
             design is zelf ontworpen en de site is geheel responsief voor het
             bekijken op mobiel, tablet of desktop.
           </p>
