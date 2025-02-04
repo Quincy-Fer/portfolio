@@ -1,29 +1,45 @@
 import React from "react";
 import ContactButton from "../components/ContactButton";
-import { motion } from "framer-motion";
+
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Contact = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className="px-48 pb-16" id="contact">
-      <h2 className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 ">
+      <motion.h2
+        className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 "
+        ref={ref}
+        initial={{ y: 100, opacity: 0 }} // Starts below and invisible
+        animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
         Contact
-      </h2>
+      </motion.h2>
       <div className="flex justify-around pt-2">
         <div className="">
           <p
             className="bg-white mt-6  font-montserrat text-xl 
               text-gray-700 mb-10 "
           >
-            Ik sta altijd open voor een gesprek!<br />  Stuur me gerust een mailtje 📧 
+            Ik sta altijd open voor een gesprek!
+            <br /> Stuur me gerust een mailtje 📧
           </p>
-          <p className="font-barlow font-bold text-teal-400 mb-10 text-xl" >quincy.e.fer@gmail.com</p>
+          <p className="font-barlow font-bold text-teal-400 mb-10 text-xl">
+            quincy.e.fer@gmail.com
+          </p>
           <ContactButton />
         </div>
         <motion.svg
-         whileHover={{
-          rotate: [-5, 5, -5, 0], // Sway effect
-          transition: { duration: 0.6, ease: "easeInOut", },
-        }}
+          initial={{ rotate: 0 }}
+          animate={{ rotate: 0 }}
+          whileHover={{
+            rotate: [-10, 10, -10, 0], // Sway effect
+            transition: { duration: 1.2, ease: "easeInOut", delay: 0.2 },
+          }}
           className="w-56 mt-12  "
           viewBox="0 0 1024 1024"
           version="1.1"

@@ -1,12 +1,23 @@
 import React from "react";
 import profiel from "../assets/images/profielfoto_enhanced.png";
 
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 const About = () => {
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section className="css-cut" id="over-mij">
-      <h2 className="text-center font-montserrat font-bold  text-5xl text-white py-10 mt-20 ">
+      <motion.h2 className="text-center font-montserrat font-bold  text-5xl text-white py-10 mt-20 "
+      ref={ref}
+      initial={{ y: 100, opacity: 0 }} // Starts below and invisible
+      animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+      >
         Over mij
-      </h2>
+      </motion.h2>
       <div className=" pb-20 pt-10 pl-48  ">
         <div className="grid grid-cols-2  pb-40 justify-items-start">
           <img

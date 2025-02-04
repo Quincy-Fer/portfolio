@@ -1,12 +1,23 @@
 import React from "react";
-
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Skills = () => {
+  // useref voor scroll animation
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className=" css-cut  ">
-      <h2 className="text-center font-montserrat font-bold  text-5xl text-white py-10 ">
+      <motion.h2
+        className="text-center font-montserrat font-bold  text-5xl text-white py-10 "
+        ref={ref}
+        initial={{ y: 100, opacity: 0 }} // Starts below and invisible
+        animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         Vaardigheden
-      </h2>
+      </motion.h2>
       <div className=" pb-20 pt-14 pl-48  ">
         <div className="flex ">
           <p className="min-w-[400px] text-white font-barlow font-bold text-2xl pt-5 pb-10">

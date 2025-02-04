@@ -3,12 +3,26 @@ import pulsefit from "../assets/images/pulse-fit.png";
 import harmony from "../assets/images/harmony-hero.png";
 import bliss from "../assets/images/bliss-hero.png";
 
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 const Projects = () => {
+  // fade in animation ref
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className="px-48 pb-16" id="projecten">
-      <h2 className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 ">
+      <motion.h2
+        className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 "
+        ref={ref}
+        initial={{ y: 100, opacity: 0 }} // Starts below and invisible
+        animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         Projecten
-      </h2>
+      </motion.h2>
       {/* project 1 */}
       <div className="grid grid-cols-2 h-[360px] mt-16">
         {/* informatie project */}
@@ -87,11 +101,10 @@ const Projects = () => {
               >
                 Bekijk Code
                 <svg
-                className="w-8"
+                  className="w-8"
                   viewBox="0 0 20 20"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  
                   fill="#2dd4bf"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -159,8 +172,7 @@ const Projects = () => {
             <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
               Tailwind
             </div>
-           
-           
+
             <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
               javascript
             </div>
@@ -222,11 +234,10 @@ const Projects = () => {
               >
                 Bekijk Code
                 <svg
-                className="w-8"
+                  className="w-8"
                   viewBox="0 0 20 20"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  
                   fill="#2dd4bf"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -358,11 +369,10 @@ const Projects = () => {
               >
                 Bekijk Code
                 <svg
-                className="w-8"
+                  className="w-8"
                   viewBox="0 0 20 20"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  
                   fill="#2dd4bf"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
