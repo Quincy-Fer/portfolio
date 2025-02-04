@@ -13,7 +13,7 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="px-48 pb-16" id="projecten">
+    <section className="lg:px-48 px-16 lg:pb-16 " id="projecten">
       <motion.h2
         className="text-center font-montserrat font-bold text-3xl  lg:text-5xl text-gray-800 py-10 "
         ref={ref}
@@ -24,43 +24,43 @@ const Projects = () => {
         Projecten
       </motion.h2>
       {/* project 1 */}
-      <div className="grid grid-cols-2 h-[360px] mt-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2  max-sm:mt-4 lg:mt-16">
         {/* informatie project */}
         <div className="">
-          <h4 className="text-gray-800 font-bold uppercase text-3xl font-montserrat">
+          <h4 className="text-gray-800 font-bold uppercase text-xl lg:text-3xl font-montserrat">
             Pulse-Fit
           </h4>
-          <div className="flex py-5 gap-4">
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+          <div className="grid grid-cols-2 lg:flex py-5 gap-1 lg:gap-4">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm  lg:text-lg">
               Next.js
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               React
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               Typescript
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               Tailwind
             </div>
           </div>
           {/* beschrijving */}
           <p
-            className="bg-white mt-6 max-w-[520px] font-barlow text-lg leading-relaxed
+            className="bg-white lg:mt-6 max-w-[520px] font-barlow text-sm lg:text-lg leading-relaxed
               tracking-wide text-gray-700"
           >
             Een visueel aantrekkelijke website voor een moderne Gym! Bevat
-            meerdere uitgebreide subpaginas gemaakt met Next.js. Het
-            design is zelf ontworpen en de site is geheel responsief voor het
-            bekijken op mobiel, tablet of desktop.
+            meerdere uitgebreide subpaginas gemaakt met Next.js. Het design is
+            zelf ontworpen en de site is geheel responsief voor het bekijken op
+            mobiel, tablet of desktop.
           </p>
           {/* links */}
-          <div className="flex  gap-10">
-            <div className="flex mt-10">
+          <div className="lg:flex  gap-10">
+            <div className="flex max-sm:mt-4 lg:mt-10">
               <a
                 href="https://pulse-fit-kappa.vercel.app/"
                 target="_blank"
-                className="bg-teal-400  text-white px-8 py-4 text-xl
+                className="bg-teal-400  text-white px-8 py-4 lg:text-xl
              font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
               >
                 Live Site
@@ -92,11 +92,11 @@ const Projects = () => {
                 </svg>
               </a>
             </div>
-            <div className="flex mt-10">
+            <div className="flex max-sm:mt-4 lg:mt-10">
               <a
                 href="https://github.com/Quincy-Fer/pulse-fit"
                 target="_blank"
-                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
+                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 lg:text-xl 
              font-barlow font-bold hover:bg-teal-800 hover:text-teal-200 transition-all flex gap-2"
               >
                 Bekijk Code
@@ -155,31 +155,32 @@ const Projects = () => {
         <img
           src={pulsefit}
           alt="image for gym website project"
-          className="w-full h-full shadow-md border border-black  box-shadow"
+          className="w-[800px] h-[150px] mt-6 
+          lg:w-full lg:h-full shadow-md border border-black  box-shadow"
         />
       </div>
       {/* project 2 */}
-      <div className="grid grid-cols-2 h-[360px] mt-48">
+      <div className="grid grid-cols-1 lg:grid-cols-2  mt-16 lg:mt-48">
         {/* informatie project */}
         <div className="">
-          <h4 className="text-gray-800 font-bold uppercase text-3xl font-montserrat">
+          <h4 className="text-gray-800 font-bold uppercase text-xl lg:text-3xl font-montserrat">
             Harmony
           </h4>
-          <div className="flex py-5 gap-4">
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+          <div className="grid grid-cols-2 lg:flex py-5 gap-1 lg:gap-4">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               React.js
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               Tailwind
             </div>
 
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               javascript
             </div>
           </div>
           {/* beschrijving */}
           <p
-            className="bg-white mt-6 max-w-[520px] font-barlow text-lg leading-relaxed
+            className="bg-white lg:mt-6 max-w-[520px] font-barlow max-sm:text-sm lg:text-lg leading-relaxed
               tracking-wide text-gray-700"
           >
             Een kalmerende website gemaakt voor een therapie kliniek. React is
@@ -188,12 +189,12 @@ const Projects = () => {
             website geheel responsief op alle apparaten
           </p>
           {/* links */}
-          <div className="flex  gap-10">
-            <div className="flex mt-10">
+          <div className="lg:flex  gap-10">
+            <div className="flex max-sm:mt-4 lg:mt-10">
               <a
                 href="https://quincy-fer.github.io/Harmony-Therapy-Website/"
                 target="_blank"
-                className="bg-teal-400  text-white px-8 py-4 text-xl 
+                className="bg-teal-400  text-white px-8 py-4 lg:text-xl 
              font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
               >
                 Live Site
@@ -225,11 +226,11 @@ const Projects = () => {
                 </svg>
               </a>
             </div>
-            <div className="flex mt-10">
+            <div className="flex max-sm:mt-4 lg:mt-10">
               <a
                 href="https://github.com/Quincy-Fer/Harmony-Therapy-Website"
                 target="_blank"
-                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
+                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 lg:text-xl 
              font-barlow font-bold hover:bg-teal-800 hover:text-teal-200 transition-all flex gap-2"
               >
                 Bekijk Code
@@ -288,33 +289,34 @@ const Projects = () => {
         <img
           src={harmony}
           alt="image for gym website project"
-          className="w-full h-full shadow-md  box-shadow border border-black"
+          className="w-[800px] h-[150px] mt-6 
+          lg:w-full lg:h-full shadow-md border border-black  box-shadow"
         />
       </div>
       {/* project 3 */}
-      <div className="grid grid-cols-2 h-[360px] mt-48">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-16 lg:mt-48">
         {/* informatie project */}
         <div className="">
-          <h4 className="text-gray-800 font-bold uppercase text-3xl font-montserrat">
+          <h4 className="text-gray-800 font-bold uppercase text-xl lg:text-3xl font-montserrat">
             Bliss
           </h4>
-          <div className="flex py-5 gap-4">
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+          <div className="grid grid-cols-2 lg:flex py-5 gap-1 lg:gap-4">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               HTML
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               CSS
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               Javascript
             </div>
-            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-lg">
+            <div className="bg-teal-700 px-4 py-2 font-semibold text-white font-barlow uppercase text-sm lg:text-lg">
               Bootstrap
             </div>
           </div>
           {/* beschrijving */}
           <p
-            className="bg-white mt-6 max-w-[520px] font-barlow text-lg leading-relaxed
+            className="bg-white lg:mt-6 max-w-[520px] font-barlow text-sm lg:text-lg leading-relaxed
               tracking-wide text-gray-700"
           >
             Een website gemaakt voor een lokale restaurant. Gebouwd met enkel
@@ -323,12 +325,12 @@ const Projects = () => {
             interactieve elementen aan de site toe te voegen.
           </p>
           {/* links */}
-          <div className="flex  gap-10">
-            <div className="flex mt-10">
+          <div className="lg:flex  gap-10">
+            <div className="flex mt-4 lg:mt-10">
               <a
                 href="https://quincy-fer.github.io/Bliss---Restaurant/"
                 target="_blank"
-                className="bg-teal-400  text-white px-8 py-4 text-xl 
+                className="bg-teal-400  text-white px-8 py-4 lg:text-xl 
              font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
               >
                 Live Site
@@ -360,11 +362,11 @@ const Projects = () => {
                 </svg>
               </a>
             </div>
-            <div className="flex mt-10">
+            <div className="flex mt-4 lg:mt-10">
               <a
                 href="https://github.com/Quincy-Fer/Bliss---Restaurant"
                 target="_blank"
-                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 text-xl 
+                className="text-teal-400 bg-white border-4 border-teal-400 px-8 py-4 lg:text-xl 
              font-barlow font-bold hover:bg-teal-800 hover:text-teal-200 transition-all flex gap-2"
               >
                 Bekijk Code
@@ -423,7 +425,8 @@ const Projects = () => {
         <img
           src={bliss}
           alt="image for gym website project"
-          className="w-full h-full shadow-md  box-shadow border border-black"
+          className="w-[800px] h-[150px] mt-6 
+          lg:w-full lg:h-full shadow-md border border-black  box-shadow"
         />
       </div>
     </section>
