@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-teal-400 text-white fixed w-full z-30">
+    <nav className="bg-teal-400 text-white fixed w-full z-30" id="#home">
       <div className="container mx-auto flex items-center justify-around p-4">
         {/* Logo */}
 
@@ -23,7 +24,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="hover:underline transition-all underline-offset-8 decoration-2">
-            <a href="#about" className="">
+            <a href="#over-mij" className="">
               Over Mij
             </a>
           </li>
@@ -37,22 +38,33 @@ const Navbar = () => {
 
         {/* Social Links */}
         <div className="hidden md:flex gap-10">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
-            LinkedIn
-          </a>
+          <div className="flex">
+            <p className="mx-auto flex items-center justify-around p-4 uppercase font-barlow font-bold">
+              github{" "}
+            </p>
+            <a
+              href="https://github.com/Quincy-Fer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-teal-700 transition"
+            >
+              <FaGithub size={38} className="mt-2" />
+            </a>
+          </div>
+
+          <div className="flex">
+            <p className="mx-auto flex items-center justify-around p-4 uppercase font-barlow font-bold">
+              LinkedIn
+            </p>
+            <a
+              href="https://linkedin.com/in/yourlinkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-teal-700  transition"
+            >
+              <FaLinkedin size={38} className="mt-2" />
+            </a>
+          </div>
         </div>
 
         {/* Hamburger Menu */}

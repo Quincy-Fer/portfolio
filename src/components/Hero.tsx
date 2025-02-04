@@ -4,7 +4,7 @@ import ButtonBorder from "./ButtonBorder";
 
 const Hero = () => {
   return (
-    <section className="p-48  background-pattern  ">
+    <section className="p-48  background-pattern " id="home">
       <h1
         className="bg-white max-w-[600px] font-montserrat font-bold  text-6xl text-gray-800 
       leading-tight tracking-tighter"

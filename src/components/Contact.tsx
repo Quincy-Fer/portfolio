@@ -3,7 +3,7 @@ import ContactButton from "../components/ContactButton";
 
 const Contact = () => {
   return (
-    <section className="px-48 pb-16">
+    <section className="px-48 pb-16" id="contact">
       <h2 className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 ">
         Contact
       </h2>

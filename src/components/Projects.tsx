@@ -5,7 +5,7 @@ import bliss from "../assets/images/bliss-hero.png";
 
 const Projects = () => {
   return (
-    <section className="px-48 pb-16">
+    <section className="px-48 pb-16" id="projecten">
       <h2 className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 ">
         Projecten
       </h2>
