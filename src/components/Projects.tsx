@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <section className="px-48 pb-16" id="projecten">
       <motion.h2
-        className="text-center font-montserrat font-bold  text-5xl text-gray-800 py-10 "
+        className="text-center font-montserrat font-bold text-3xl  lg:text-5xl text-gray-800 py-10 "
         ref={ref}
         initial={{ y: 100, opacity: 0 }} // Starts below and invisible
         animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view

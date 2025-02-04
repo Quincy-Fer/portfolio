@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <section className=" css-cut  ">
       <motion.h2
-        className="text-center font-montserrat font-bold  text-5xl text-white py-10 "
+        className="text-center font-montserrat font-bold text-3xl  lg:text-5xl text-white py-10 "
         ref={ref}
         initial={{ y: 100, opacity: 0 }} // Starts below and invisible
         animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
@@ -18,15 +18,15 @@ const Skills = () => {
       >
         Vaardigheden
       </motion.h2>
-      <div className=" pb-20 pt-14 pl-48  ">
-        <div className="flex ">
-          <p className="min-w-[400px] text-white font-barlow font-bold text-2xl pt-5 pb-10">
+      <div className="px-16 lg:pb-20 lg:pt-14 lg:pl-48  ">
+        <div className="lg:flex ">
+          <p className="min-w-[400px] text-white  font-barlow font-bold text-xl lg:text-2xl pt-5 pb-10">
             Programmeertalen
           </p>
           {/* Grid div voor programmeertalen */}
           <div
-            className="grid grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
-           text-white font-bold text-xl pb-32 "
+            className="grid max-sm:grid-cols-3 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
+           text-white font-bold text-xl lg:pb-32 pb-10 "
           >
             {/* html */}
             <svg
@@ -57,6 +57,7 @@ const Skills = () => {
                 </g>{" "}
               </g>
             </svg>
+          
             {/* css */}
             <svg
               className="w-14"
@@ -131,7 +132,7 @@ const Skills = () => {
             </svg>
             {/* ts */}
             <svg
-              className="w-14 ml-4"
+              className="w-14 lg:ml-4 max-sm:mt-4"
               viewBox="0 0 16 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +162,7 @@ const Skills = () => {
             </svg>
             {/* python */}
             <svg
-              className="w-14 ml-2"
+              className="w-14 ml-2 max-sm:mt-4"
               viewBox="0 0 20 20"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -204,25 +205,25 @@ const Skills = () => {
                 </g>{" "}
               </g>
             </svg>
-            <p className="ml-2">Html</p>
-            <p className="ml-3">Css</p>
-            <p>Javascript</p>
-            <p>Typescript</p>
-            <p>Python</p>
+            <p className="ml-2 max-sm:hidden">Html</p>
+            <p className="ml-3 max-sm:hidden">Css</p>
+            <p className="max-sm:hidden">Javascript</p>
+            <p className="max-sm:hidden">Typescript</p>
+            <p className="max-sm:hidden">Python</p>
           </div>
         </div>
-        <div className="flex">
-          <p className="min-w-[400px] text-white font-barlow font-bold text-2xl pt-5 pb-10">
+        <div className="lg:flex">
+          <p className="min-w-[400px] text-white  font-barlow font-bold text-xl lg:text-2xl pt-5 pb-10">
             Libraries en Frameworks
           </p>
           {/* Grid div voor libraries en frameworks */}
           <div
-            className="grid grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
-           text-white font-bold text-xl pb-32 "
+            className="grid max-sm:grid-cols-3 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
+           text-white font-bold text-xl lg:pb-32 pb-10 "
           >
             {/* react */}
             <svg
-              className="w-16 ml-3"
+              className="w-16 lg:ml-3"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               fill="#fff"
@@ -242,7 +243,7 @@ const Skills = () => {
             </svg>
             {/* next */}
             <svg
-              className="w-16 ml-2"
+              className="w-16 lg:ml-2"
               viewBox="-2.16 -2.16 28.32 28.32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +276,7 @@ const Skills = () => {
             </svg>
             {/* tailwind */}
             <svg
-              className="w-16 ml-3"
+              className="w-16 lg:ml-3"
               fill="#fff"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +298,7 @@ const Skills = () => {
             </svg>
             {/* bootstrap */}
             <svg
-              className="w-16 ml-4"
+              className="w-16 lg:ml-4 max-sm:mt-4"
               viewBox="-3.84 -3.84 31.68 31.68"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -322,7 +323,7 @@ const Skills = () => {
             </svg>
             {/* jquery */}
             <svg
-              className="w-16"
+              className="w-16 max-sm:mt-4"
               fill="#fff"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -350,20 +351,20 @@ const Skills = () => {
                 </g>{" "}
               </g>
             </svg>
-            <p className="ml-1">React.js</p>
-            <p className="ml-2">Next.js</p>
-            <p className="ml-1">Tailwind</p>
-            <p>Bootstrap</p>
-            <p>Jquery</p>
+            <p className="ml-1 max-sm:hidden">React.js</p>
+            <p className="ml-2 max-sm:hidden">Next.js</p>
+            <p className="ml-1 max-sm:hidden">Tailwind</p>
+            <p className="max-sm:hidden">Bootstrap</p>
+            <p className="max-sm:hidden">Jquery</p>
           </div>
         </div>
-        <div className="flex">
-          <p className="min-w-[400px] text-white font-barlow font-bold text-2xl pt-5 pb-10">
+        <div className="lg:flex">
+          <p className="min-w-[400px] text-white  font-barlow font-bold text-xl lg:text-2xl pt-5 pb-10">
             Tools
           </p>
           <div
-            className="grid grid-cols-5 grid-row-2 gap-x-16 gap-y-5  font-barlow
-           text-white font-bold text-xl pb-32 "
+            className="grid max-sm:grid-cols-3 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
+           text-white font-bold text-xl lg:pb-32 pb-10 "
           >
             {/* node */}
             <svg

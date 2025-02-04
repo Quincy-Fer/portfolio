@@ -10,7 +10,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true });
   return (
     <section className="css-cut" id="over-mij">
-      <motion.h2 className="text-center font-montserrat font-bold  text-5xl text-white py-10 mt-20 "
+      <motion.h2 className="text-center font-montserrat font-bold text-3xl  lg:text-5xl text-white py-10 mt-20 "
       ref={ref}
       initial={{ y: 100, opacity: 0 }} // Starts below and invisible
       animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
