@@ -1,5 +1,6 @@
 import React from "react";
 import ContactButton from "../components/ContactButton";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -18,8 +19,12 @@ const Contact = () => {
           <p className="font-barlow font-bold text-teal-400 mb-10 text-xl" >quincy.e.fer@gmail.com</p>
           <ContactButton />
         </div>
-        <svg
-          className="w-56 mt-12"
+        <motion.svg
+         whileHover={{
+          rotate: [-5, 5, -5, 0], // Sway effect
+          transition: { duration: 0.6, ease: "easeInOut", },
+        }}
+          className="w-56 mt-12  "
           viewBox="0 0 1024 1024"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +67,7 @@ const Contact = () => {
               fill=""
             ></path>
           </g>
-        </svg>
+        </motion.svg>
       </div>
     </section>
   );
