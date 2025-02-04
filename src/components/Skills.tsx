@@ -364,11 +364,11 @@ const Skills = () => {
           </p>
           <div
             className="grid max-sm:grid-cols-3 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
-           text-white font-bold text-xl lg:pb-32 pb-10 "
+           text-white font-bold text-xl pb-32  "
           >
             {/* node */}
             <svg
-              className="w-18"
+              className="lg:w-18 w-16"
               fill="#fff"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -400,7 +400,7 @@ const Skills = () => {
             </svg>
             {/* git */}
             <svg
-              className="w-16"
+              className="lg:w-16 w-14 max-sm:mt-2"
               fill="#fff"
               viewBox="0 0 32.00 32.00"
               version="1.1"
@@ -422,7 +422,7 @@ const Skills = () => {
             </svg>
             {/* github */}
             <svg
-              className="w-16"
+              className="w-16 max-sm:mt-1"
               viewBox="-2.6 -2.6 25.20 25.20"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -558,11 +558,11 @@ const Skills = () => {
                 </defs>
               </g>
             </svg>
-            <p className="ml-2">Node</p>
-            <p className="ml-4">Git</p>
-            <p>Github</p>
-            <p>Vscode</p>
-            <p className="ml-4">Vite</p>
+            <p className="ml-2 max-sm:hidden">Node</p>
+            <p className="ml-4 max-sm:hidden">Git</p>
+            <p className="max-sm:hidden">Github</p>
+            <p className="max-sm:hidden">Vscode</p>
+            <p className="ml-4 max-sm:hidden">Vite</p>
           </div>
         </div>
       </div>
