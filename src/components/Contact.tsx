@@ -9,7 +9,7 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="px-48 pb-16" id="contact">
+    <section className="px-16 lg:px-48 pb-16" id="contact">
       <motion.h2
         className="text-center font-montserrat font-bold text-3xl  lg:text-5xl text-gray-800 py-10 "
         ref={ref}
@@ -19,11 +19,11 @@ const Contact = () => {
       >
         Contact
       </motion.h2>
-      <div className="flex justify-around pt-2">
+      <div className="flex justify-around lg:pt-2 lg:mt-10 lg:mb-12">
         <div className="">
           <p
-            className="bg-white mt-6  font-montserrat text-xl 
-              text-gray-700 mb-10 "
+            className="bg-white mt-6  font-montserrat text-lg lg:text-xl text-center 
+              text-gray-700 lg:mb-10 mb-4 "
           >
             Ik sta altijd open voor een gesprek!
             <br /> Stuur me gerust een mailtje 📧
@@ -46,7 +46,7 @@ const Contact = () => {
               repeat: 2, // Keeps bouncing while hovered
             },
           }}
-          className="w-56 mt-12  "
+          className="w-56 mt-12 hidden lg:flex  "
           viewBox="0 0 1024 1024"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

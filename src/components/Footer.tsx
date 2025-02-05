@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-teal-400 text-white  py-4 ">
       <div className="flex  justify-center gap-4 mt-4 mb-4">
-        <p className="font-barlow text-lg font-bold tracking-widest ">Github en LinkedIn: </p>
+        <p className="font-barlow lg:text-lg font-bold tracking-widest ">Github en LinkedIn: </p>
         <a
           href="https://github.com/Quincy-Fer"
           target="_blank"
@@ -24,7 +24,7 @@ const Footer = () => {
           <FaLinkedin size={40} />
         </a>
       </div>
-      <p className="text-md font-barlow font-bold text-end mr-4">
+      <p className="text-md font-barlow font-bold lg:text-end lg:mr-4 max-sm:mt-6 text-center">
         &copy; {new Date().getFullYear()} Copyright Quincy Fer
       </p>
     </footer>

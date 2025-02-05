@@ -18,12 +18,12 @@ const About = () => {
       >
         Over mij
       </motion.h2>
-      <div className=" pb-20 pt-10 pl-48  ">
-        <div className="grid grid-cols-2  pb-40 justify-items-start">
+      <div className=" lg:pb-20 pt-10 lg:pl-48 p-16  ">
+        <div className="grid grid-cols-1 lg:grid-cols-2  pb-40 justify-items-start">
           <img
             src={profiel}
             alt="profielfoto"
-            className="rounded-full bg-cover w-[580px] h-[580px] border-4 border-white"
+            className="rounded-full bg-cover lg:w-[580px] lg:h-[580px] border-4 border-white"
           />
           <div>
             {" "}
@@ -52,7 +52,7 @@ const About = () => {
             >
               <button
                 className="mt-10 font-barlow px-6 py-3 font-semibold bg-white text-teal-400 text-xl
-                hover:text-white hover:bg-teal-700  transition-all "
+                hover:text-white hover:bg-teal-700  transition-all max-sm:mb-12 "
               >
                 Bekijk mijn CV
               </button>
