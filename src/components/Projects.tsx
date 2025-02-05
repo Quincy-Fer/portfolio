@@ -55,8 +55,8 @@ const Projects = () => {
             mobiel, tablet of desktop.
           </p>
           {/* links */}
-          <div className="lg:flex  gap-10">
-            <div className="flex max-sm:mt-4 lg:mt-10">
+          <div className="md:flex  gap-10">
+            <div className="flex max-sm:mt-4 md:mt-10">
               <a
                 href="https://pulse-fit-kappa.vercel.app/"
                 target="_blank"
@@ -92,7 +92,7 @@ const Projects = () => {
                 </svg>
               </a>
             </div>
-            <div className="flex max-sm:mt-4 lg:mt-10">
+            <div className="flex max-sm:mt-4 md:mt-10">
               <a
                 href="https://github.com/Quincy-Fer/pulse-fit"
                 target="_blank"
@@ -155,7 +155,7 @@ const Projects = () => {
         <img
           src={pulsefit}
           alt="image for gym website project"
-          className="w-[800px] h-[150px] mt-6 
+          className="max-sm:w-[800px] max-sm:h-[150px] mt-6 
           lg:w-full lg:h-full shadow-md border border-black  box-shadow"
         />
       </div>
@@ -189,8 +189,8 @@ const Projects = () => {
             website geheel responsief op alle apparaten
           </p>
           {/* links */}
-          <div className="lg:flex  gap-10">
-            <div className="flex max-sm:mt-4 lg:mt-10">
+          <div className="md:flex  gap-10">
+            <div className="flex max-sm:mt-4 md:mt-10">
               <a
                 href="https://quincy-fer.github.io/Harmony-Therapy-Website/"
                 target="_blank"
@@ -226,7 +226,7 @@ const Projects = () => {
                 </svg>
               </a>
             </div>
-            <div className="flex max-sm:mt-4 lg:mt-10">
+            <div className="flex max-sm:mt-4 md:mt-10">
               <a
                 href="https://github.com/Quincy-Fer/Harmony-Therapy-Website"
                 target="_blank"
@@ -289,7 +289,7 @@ const Projects = () => {
         <img
           src={harmony}
           alt="image for gym website project"
-          className="w-[800px] h-[150px] mt-6 
+          className="max-sm:w-[800px] max-sm:h-[150px] mt-6 
           lg:w-full lg:h-full shadow-md border border-black  box-shadow"
         />
       </div>
@@ -325,7 +325,7 @@ const Projects = () => {
             interactieve elementen aan de site toe te voegen.
           </p>
           {/* links */}
-          <div className="lg:flex  gap-10">
+          <div className="md:flex  gap-10">
             <div className="flex mt-4 lg:mt-10">
               <a
                 href="https://quincy-fer.github.io/Bliss---Restaurant/"
@@ -425,7 +425,7 @@ const Projects = () => {
         <img
           src={bliss}
           alt="image for gym website project"
-          className="w-[800px] h-[150px] mt-6 
+          className="max-sm:w-[800px] max-sm:h-[150px] mt-6 
           lg:w-full lg:h-full shadow-md border border-black  box-shadow"
         />
       </div>
