@@ -61,7 +61,7 @@ const Projects = () => {
                 href="https://pulse-fit-kappa.vercel.app/"
                 target="_blank"
                 className="bg-teal-400  text-white px-8 py-4 lg:text-xl
-             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
+             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2 lg:pb-6 "
               >
                 Live Site
                 <svg
@@ -195,7 +195,7 @@ const Projects = () => {
                 href="https://quincy-fer.github.io/Harmony-Therapy-Website/"
                 target="_blank"
                 className="bg-teal-400  text-white px-8 py-4 lg:text-xl 
-             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
+             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2 lg:pb-6"
               >
                 Live Site
                 <svg
@@ -331,7 +331,7 @@ const Projects = () => {
                 href="https://quincy-fer.github.io/Bliss---Restaurant/"
                 target="_blank"
                 className="bg-teal-400  text-white px-8 py-4 lg:text-xl 
-             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2"
+             font-barlow font-bold hover:bg-teal-500 transition-all flex gap-2 lg:pb-6"
               >
                 Live Site
                 <svg
