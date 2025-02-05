@@ -7,11 +7,11 @@ const Navbar = () => {
 
   return (
     <nav className="bg-teal-400 text-white fixed w-full z-30" id="#home">
-      <div className="container mx-auto flex items-center justify-around lg:p-4 p-8">
+      <div className="container mx-auto flex items-center justify-around lg:p-4 p-8 md:p-4">
         {/* Logo */}
 
         {/* Links for larger screens */}
-        <ul className="hidden md:flex font-extrabold gap-20 font-barlow transition-all">
+        <ul className="hidden md:flex font-extrabold md:gap-8 lg:gap-20 font-barlow transition-all">
           <li className="hover:underline transition-all underline-offset-8 decoration-2 ">
             <a href="#home">Home</a>
           </li>

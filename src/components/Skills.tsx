@@ -25,7 +25,7 @@ const Skills = () => {
           </p>
           {/* Grid div voor programmeertalen */}
           <div
-            className="grid max-sm:grid-cols-3 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
+            className="grid max-sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
            text-white font-bold text-xl lg:pb-32 pb-10 "
           >
             {/* html */}
@@ -218,7 +218,7 @@ const Skills = () => {
           </p>
           {/* Grid div voor libraries en frameworks */}
           <div
-            className="grid max-sm:grid-cols-3 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
+            className="grid max-sm:grid-cols-3 md:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
            text-white font-bold text-xl lg:pb-32 pb-10 "
           >
             {/* react */}
@@ -363,8 +363,8 @@ const Skills = () => {
             Tools
           </p>
           <div
-            className="grid max-sm:grid-cols-3 lg:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
-           text-white font-bold text-xl pb-32  "
+            className="grid max-sm:grid-cols-3 md:grid-cols-5 grid-row-2 gap-x-10 gap-y-5  font-barlow
+           text-white font-bold text-xl pb-32 md:pb-48 lg:pb-32    "
           >
             {/* node */}
             <svg

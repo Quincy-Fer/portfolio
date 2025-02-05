@@ -22,7 +22,7 @@ const itemVariants = {
 
 const Hero = () => {
   return (
-    <section className=" p-16  lg:p-48  background-pattern " id="home">
+    <section className=" p-16 md:pt-36   lg:p-48  background-pattern " id="home">
       <motion.div variants={containerVariants} initial="hidden" animate="show">
         <motion.h1
           className="bg-white lg:max-w-[600px] font-montserrat font-bold text-4xl  lg:text-6xl text-gray-800 
