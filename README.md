@@ -9,3 +9,11 @@ Zie de site live hier : (https://quincy-fer.github.io/portfolio/)
 * Type " npm run build " in je terminal
 * Zodra het klaar is met bouwen type " npm start "
 * Open http://localhost:3000/ om te bekijken
+
+### Gemaakt met :
+
+* Library: React.js
+* Programeertalen: HTML, CSS,  Typescript
+* Styling: Tailwind.css, custom css
+* Animaties: framer-motion
+
