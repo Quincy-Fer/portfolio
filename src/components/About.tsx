@@ -19,16 +19,16 @@ const About = () => {
         Over mij
       </motion.h2>
       <div className=" lg:pb-20 pt-10 lg:pl-48 p-16  ">
-        <div className="grid grid-cols-1 lg:grid-cols-2  pb-40 justify-items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2  pb-40 md:justify-items-center lg:justify-items-start">
           <img
             src={profiel}
             alt="profielfoto"
-            className="rounded-full bg-cover lg:w-[580px] lg:h-[580px] border-4 border-white"
+            className=" rounded-full bg-cover md:w-[400px] md:h-[400px] lg:w-[580px] lg:h-[580px] border-4 border-white"
           />
           <div>
             {" "}
             <p
-              className="text-white mt-10 max-w-[520px] font-montserrat text-lg 
+              className="text-white mt-10 max-w-[520px] font-montserrat text-lg  
         "
             >
               Ik ben Quincy, een frontend developer met een passie voor het
