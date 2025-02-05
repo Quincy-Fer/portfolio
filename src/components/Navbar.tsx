@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-teal-400 text-white fixed w-full z-30" id="#home">
-      <div className="container mx-auto flex items-center justify-around p-4">
+      <div className="container mx-auto flex items-center justify-around lg:p-4 p-8">
         {/* Logo */}
 
         {/* Links for larger screens */}
@@ -69,47 +70,79 @@ const Navbar = () => {
 
         {/* Hamburger Menu */}
         <button
-          className="md:hidden text-red-900"
+          className="md:hidden absolute top-4 right-4 text-white"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
         >
-          <svg
-            className="w-6 h-6"
+          <motion.svg
+            className="w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            {/* Top Line (Morphs) */}
+            <motion.path
+              initial={false}
+              animate={{ d: isOpen ? "M6 18L18 6" : "M4 6h16" }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
             />
-          </svg>
+
+            {/* Middle Line (Fades Out/In) */}
+            <motion.path
+              initial={false}
+              animate={{ opacity: isOpen ? 0 : 1 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              d="M4 12h16"
+            />
+
+            {/* Bottom Line (Morphs) */}
+            <motion.path
+              initial={false}
+              animate={{ d: isOpen ? "M6 6l12 12" : "M4 18h16" }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+            />
+          </motion.svg>
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-700">
-          <div className="flex flex-col items-center space-y-4 py-4">
-            <a href="#home" className="hover:text-gray-300">
+        <div className="fixed w-full bg-teal-400  z-20 flex flex-col items-center justify-center lg:hidden">
+          <div className="flex flex-col items-center space-y-12 py-8 h-screen pt-20">
+            <a
+              href="#home"
+              className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+            >
               Home
             </a>
-            <a href="#projects" className="hover:text-gray-300">
-              Projects
-            </a>
-            <a href="#contact" className="hover:text-gray-300">
-              Contact
-            </a>
-            <a href="#about" className="hover:text-gray-300">
-              About
+            <a
+              href="#projects"
+              className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+            >
+              Projecten
             </a>
             <a
-              href="https://github.com"
+              href="#about"
+              className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+            >
+              Over Mij
+            </a>
+            <a
+              href="#contact"
+              className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+            >
+              Contact
+            </a>
+
+            <a
+              href="https://github.com/Quincy-Fer"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-300"
+              className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
             >
               GitHub
             </a>
@@ -117,7 +150,7 @@ const Navbar = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-300"
+              className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
             >
               LinkedIn
             </a>
