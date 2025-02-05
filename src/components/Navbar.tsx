@@ -13,27 +13,19 @@ const Navbar = () => {
         {/* Links for larger screens */}
         <ul className="hidden md:flex font-extrabold gap-20 font-barlow transition-all">
           <li className="hover:underline transition-all underline-offset-8 decoration-2 ">
-            <a href="#home" className="">
-              Home
-            </a>
+            <a href="#home">Home</a>
           </li>
 
           <li className="hover:underline transition-all underline-offset-8 decoration-2">
             {" "}
-            <a href="#projecten" className="">
-              Projecten
-            </a>
+            <a href="#projecten">Projecten</a>
           </li>
           <li className="hover:underline transition-all underline-offset-8 decoration-2">
-            <a href="#over-mij" className="">
-              Over Mij
-            </a>
+            <a href="#over-mij">Over Mij</a>
           </li>
           <li className="hover:underline transition-all underline-offset-8 decoration-2">
             {" "}
-            <a href="#contact" className="">
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -111,29 +103,38 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed w-full bg-teal-400  z-20 flex flex-col items-center justify-center lg:hidden">
+        <motion.div
+          className="fixed w-full bg-teal-400  z-20 flex flex-col items-center justify-center lg:hidden"
+          initial={{ x: "-100%", opacity: 0 }} // Starts off-screen
+          animate={{ x: isOpen ? "0%" : "-100%", opacity: isOpen ? 1 : 0 }} // Slides in/out
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
           <div className="flex flex-col items-center space-y-12 py-8 h-screen pt-20">
             <a
               href="#home"
               className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+              onClick={() => setIsOpen(!isOpen)}
             >
               Home
             </a>
             <a
-              href="#projects"
+              href="#projecten"
               className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+              onClick={() => setIsOpen(!isOpen)}
             >
               Projecten
             </a>
             <a
-              href="#about"
+              href="#over-mij"
               className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+              onClick={() => setIsOpen(!isOpen)}
             >
               Over Mij
             </a>
             <a
               href="#contact"
               className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+              onClick={() => setIsOpen(!isOpen)}
             >
               Contact
             </a>
@@ -143,6 +144,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
+              
             >
               GitHub
             </a>
@@ -155,7 +157,7 @@ const Navbar = () => {
               LinkedIn
             </a>
           </div>
-        </div>
+        </motion.div>
       )}
     </nav>
   );
