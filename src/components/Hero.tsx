@@ -29,7 +29,7 @@ const Hero = () => {
           leading-tight tracking-tighter max-sm:mt-10"
           variants={itemVariants}
         >
-          Hi, ik ben <span className="text-teal-400"> Quincy.</span>
+          Hi, ik bennn <span className="text-teal-400"> Quincy.</span>
           <br />
           Frontend developer |
         </motion.h1>
