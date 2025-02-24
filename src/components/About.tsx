@@ -1,6 +1,6 @@
 import React from "react";
 import profiel from "../assets/images/profielfoto_enhanced.png";
-import pdf from "../assets/images/CV Quincy Fer.pdf";
+import pdf from "../assets/images/Resume Quincy Fer.pdf";
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -47,7 +47,7 @@ const About = () => {
               omzetten van ideeën naar iets tastbaars.
             </p>
             <a
-              href="https://www.wikipedia.org/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
