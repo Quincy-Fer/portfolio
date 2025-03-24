@@ -32,9 +32,14 @@ const Navbar = () => {
         {/* Social Links */}
         <div className="hidden md:flex gap-10">
           <div className="flex">
-            <p className="mx-auto flex items-center justify-around p-4 uppercase font-barlow font-bold">
-              github{" "}
-            </p>
+            <a
+              className="mx-auto flex items-center justify-around p-4 uppercase font-barlow font-bold hover:underline transition-all underline-offset-8 decoration-2"
+              href="https://github.com/Quincy-Fer"
+               rel="noopener noreferrer"
+                target="_blank"
+            >
+              github:{" "}
+            </a>
             <a
               href="https://github.com/Quincy-Fer"
               target="_blank"
@@ -46,11 +51,16 @@ const Navbar = () => {
           </div>
 
           <div className="flex">
-            <p className="mx-auto flex items-center justify-around p-4 uppercase font-barlow font-bold">
-              LinkedIn
-            </p>
+          <a
+              className="mx-auto flex items-center justify-around p-4 uppercase font-barlow font-bold hover:underline transition-all underline-offset-8 decoration-2"
+              href="https://www.linkedin.com/in/quincy-fer/"
+               rel="noopener noreferrer"
+                target="_blank"
+            >
+              LinkedIn:{" "}
+            </a>
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://www.linkedin.com/in/quincy-fer/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-teal-700  transition"
@@ -144,7 +154,6 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline hover:underline-offset-4 font-montserrat font-bold"
-              
             >
               GitHub
             </a>
