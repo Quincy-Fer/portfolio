@@ -20,7 +20,7 @@ const Contact = () => {
         Contact
       </motion.h2>
       <div className="flex justify-around lg:pt-2 lg:mt-10 lg:mb-12">
-        <div className="">
+        <div className="text-center">
           <p
             className="bg-white mt-6  font-montserrat text-lg lg:text-xl text-center 
               text-gray-700 lg:mb-10 mb-4 "
@@ -33,19 +33,7 @@ const Contact = () => {
           </p>
           <ContactButton />
         </div>
-        <motion.svg
-          initial={{ rotate: 0 }}
-          animate={{ rotate: 0 }}
-          whileHover={{
-            y: [-15, 0, -9, 0], // Bouncing effect
-            transition: {
-              type: "spring", // Smooth natural motion
-              stiffness: 50, // Controls how strong the spring is
-              damping: 10, // Slows down motion for smooth effect
-              mass: 0.5, // Lighter mass makes it more responsive
-              repeat: 2, // Keeps bouncing while hovered
-            },
-          }}
+        <svg
           className="w-56 mt-12 hidden lg:flex  "
           viewBox="0 0 1024 1024"
           version="1.1"
@@ -89,7 +77,7 @@ const Contact = () => {
               fill=""
             ></path>
           </g>
-        </motion.svg>
+        </svg>
       </div>
     </section>
   );
