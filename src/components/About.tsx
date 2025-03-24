@@ -1,20 +1,21 @@
 import React from "react";
 import profiel from "../assets/images/profielfoto_enhanced.png";
+import pdf from "../assets/images/Resume Quincy Fer.pdf";
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const About = () => {
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
     <section className="css-cut" id="over-mij">
-      <motion.h2 className="text-center font-montserrat font-bold text-3xl  lg:text-5xl text-white py-10 mt-20 "
-      ref={ref}
-      initial={{ y: 100, opacity: 0 }} // Starts below and invisible
-      animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
-      transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+      <motion.h2
+        className="text-center font-montserrat font-bold text-3xl  lg:text-5xl text-white py-10 mt-20 "
+        ref={ref}
+        initial={{ y: 100, opacity: 0 }} // Starts below and invisible
+        animate={isInView ? { y: 0, opacity: 1 } : {}} // Moves up when in view
+        transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
       >
         Over mij
       </motion.h2>
@@ -46,16 +47,19 @@ const About = () => {
               omzetten van ideeën naar iets tastbaars.
             </p>
             <a
-              href="https://www.wikipedia.org/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button
-                className="mt-10 font-barlow px-6 py-3 font-semibold bg-white text-teal-400 text-xl
+              <div className="mt-10 max-sm:mb-12">
+                <a
+                href={pdf} target="_blank"
+                  className="mt-10  font-barlow px-6 py-3 font-semibold bg-white text-teal-400 text-xl
                 hover:text-white hover:bg-teal-700  transition-all max-sm:mb-12 "
-              >
-                Bekijk mijn CV
-              </button>
+                >
+                  Bekijk mijn CV
+                </a>
+              </div>
             </a>
           </div>
         </div>
